@@ -1,0 +1,531 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter_18pt-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter_18pt-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter_28pt-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter_28pt-BoldItalic.ttf);
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: url(../fonts/PTSansNarrow-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: url(../fonts/PTSansNarrow-Regular.ttf);
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background: #B9F73E;
+    height: 98px;
+    padding-top: 29px;
+    @media (max-width: 361px) {
+        padding-top: 45px;
+    }
+
+    &__container {
+        width: 1793px;
+        margin: 0 auto;
+        @media (max-width: 361px) {
+            width: 340px;
+        }
+    }
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 361px) {
+            display: flex;
+            align-items: center;
+            justify-content: none;
+        }
+    }
+    &__logo {
+        @media (max-width: 361px) {
+            width: 120px; 
+            height: 20px;
+        }
+    }
+    &__search {
+        width: 700px;
+        height: 38px;
+        border-radius: 100px;
+        @media (max-width: 361px) {
+            width: 40px;
+            height: 18px;
+        }
+        &_btn {
+            width: 32px;
+            height: 32px;
+            color: #fff;
+            border-radius: 10px;
+            @media (max-width: 361px) {
+                width: 14px;
+                height: 14px;
+                border-radius: 4px;
+            }
+        }
+        &_icon {
+            @media (max-width: 361px) {
+                width: 7px;
+                height: 7px;
+            }
+        }
+    }
+    &__search::placeholder {
+        color: #CACACA;
+        padding-left: 15px;
+        font-size: 20px;
+        font-family: "Inter";
+        font-weight: 400;
+        @media (max-width: 361px) {
+            padding-left: 0;
+            font-size: 3px;
+        }
+    }
+
+    &__btn_0 {
+        padding: 10px 30px;
+        background-color: #ADEC5A;
+        border-radius: 20px;
+        font-family: "Inter";
+        font-weight: 600;
+        color: #2A0A53;
+        margin-right: 22px;
+        box-shadow: 1px 2px rgba($color: #000000, $alpha: 0.25);
+        @media (max-width: 361px) {
+            padding: 8px 22px;
+            font-size: 3px;
+            margin-right: 8px;
+        }
+    }
+
+    &__btn_1 {
+        padding: 9px 7px;
+        background-color: #ADEC5A;
+        border-radius: 20px;
+        font-family: "Inter";
+        font-weight: 600;
+        color: #2A0A53;
+        box-shadow: 1px 2px rgba($color: #000000, $alpha: 0.25);
+        @media (max-width: 361px) {
+            padding: 7px 11px;
+            font-size: 3px;
+        }
+    }
+    &__icons {
+        @media (max-width: 361px) {
+            width: 9px;
+            height: 10px;
+        }
+    }
+    &__cart {
+        margin-right: 27px;
+        @media (max-width: 361px) {
+            width: 13px;
+            height: 13px;
+        }
+    }
+}
+
+.main {
+    padding-top: 325px;
+    background: url(../img/Group\ 37.png) no-repeat center center / cover;
+    height: 982px;
+
+    &__container {
+        width: 574px;
+        margin: 0 auto;
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__btn {
+        margin-top: 75px;
+        padding: 9px 49px;
+        background-color: #9FEE00;
+        border-radius: 25px;
+        font-family: "Inter";
+        font-weight: 600;
+        color: #2A0A53;
+        font-size: 20px;
+    }
+}
+
+.advantages {
+    background: rgba($color: #B9F73E, $alpha: 0.6) no-repeat center center / cover;
+    height: 800px;
+    padding-top: 84px;
+    &__container {
+        width: 1304px;
+        margin: 0 auto;
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        font-size: 100px;
+        font-family: "PT Sans Narrow";
+        font-weight: 400;
+        color: #2A0A53;
+        padding-bottom: 66px;
+    }
+    &__info {
+        background: url(../img/Group\ 39.png) no-repeat center center / cover;
+        width: 1304px;
+        height: 466px;
+        &_wrap {
+            display: flex;
+            justify-content: space-between
+        }
+        &_subtitle {
+            font-size: 50px;
+            font-family: "PT Sans Narrow";
+            font-weight: 400;
+            color: #2A0A53;
+            max-width: 450px;
+            padding-bottom: 39px;
+            &_2 {
+                padding-right: 50px;
+            }
+        }
+        &_text_0 {
+            font-size: 30px;
+            font-family: "PT Sans Narrow";
+            font-weight: 400;
+            color: #2A0A53;
+            width: 253px;
+            height: 156px;
+            margin-left: 40px;
+        }
+        &_text_1 {
+            font-size: 30px;
+            font-family: "PT Sans Narrow";
+            font-weight: 400;
+            color: #2A0A53;
+            width: 305px;
+            height: 148px;
+            padding-left: 27px;
+        }
+        &_text_2 {
+            font-size: 30px;
+            font-family: "PT Sans Narrow";
+            font-weight: 400;
+            color: #2A0A53;
+            width: 370px;
+            height: 117px;
+            margin-left: 50px;
+        }
+        &_advant {
+            &_0 {
+                margin-left: 43px;
+                margin-top: 147px;
+            }
+            &_1 {
+                margin-top: 188px;
+                margin-left: 163px;
+            }
+        }
+    }
+}
+
+.catalog {
+    background-color: rgba($color: #ADEC5A, $alpha: 0.6);
+    &__container{
+        width: 1631px;
+        margin: 0 auto;
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        margin-top: 120px;
+        background: url(../img/Vector\ 3.png) no-repeat;
+        padding: 77px 120px 105px 76px;
+        font-family: "Inter";
+        font-style: italic;
+        font-weight: 700;
+        font-size: 60px;
+        color: #2A0A53;
+        margin-bottom: 76px;
+    }
+    &__card {
+        align-items: center;
+        display: flex;
+        margin-bottom: 164px;
+        width: 1631px;
+        height: 633px;
+        background-color: #B9F73E;
+        border-radius: 50px;
+        &_img {
+            padding-left: 55px;
+        }
+        &_info {
+            padding-left: 110px;
+            font-family: "Inter";
+            color: #2A0A53;
+            font-weight: 700;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            &_subtitle {
+                font-size: 40px;
+                margin-bottom: 44px;
+
+            }
+            &_text {
+                font-size: 20px;
+                width: 510px;
+                height: 239px;
+                margin-bottom: 42px;
+            }
+            &_price {
+                font-size: 25px;
+                margin-bottom: 42px;
+            }
+            &_buy {
+                padding: 20px 100px;
+                background: #9FEE00;
+                border-radius: 50px;
+            }
+        }
+    }
+    &__card:last-child {
+        margin-bottom: 51px;
+    }
+    &__link {
+        margin-left: 1508px;
+        color: #2A0A53;
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: 20px;
+        padding-bottom: 56px;
+    }
+}
+
+.about {
+    background-color: rgba($color: #B9F73E, $alpha: 0.35);
+    height: 810px;
+    color: #2A0A53;
+    font-family: "PT Sans Narrow";
+    &__container {
+        width: 1694px;
+        margin: 0 auto;
+    }
+    &__wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__title {
+        padding-top: 54px;
+        padding-bottom: 114px;
+        align-items: center;
+        font-weight: 400;
+        font-size: 100px;
+    }
+    &__informations {
+        display: flex;
+    }
+    &__info {
+        
+        &_0 {
+            padding: 44px 59px;
+            font-weight: 700;
+            font-size: 40px;
+            width: 493px;
+            height: 312px;
+            background-color: #9FEE00;
+            border-radius: 70px;
+        }
+        &_1 {
+            padding: 52px;
+            font-weight: 700;
+            font-size: 40px;
+            width: 438px;
+            height: 311px;
+            background-color: #9FEE00;
+            border-radius: 70px;
+            margin-left: 134px;
+            margin-right: 134px;
+        }
+        &_2 {
+            padding: 44px 76px;
+            font-weight: 700;
+            font-size: 40px;
+            width: 492px;
+            height: 312px;
+            background-color: #9FEE00;
+            border-radius: 70px;
+        }
+    }
+}
+
+.reviems {
+    background: url(../img/Group\ 40.png);
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter";
+    color: #2A0A53;
+    &__title {
+        font-weight: 700;
+        font-size: 80px;
+        padding-top: 59px;
+    }
+    &__reviems {
+        display: flex;
+    }
+    &__reviem {
+        &_0 {
+            position: relative;
+            top: 650px;
+        }
+        &_1 {
+            position: relative;
+            left: 50px;
+            top: 300px;
+        }
+        &_2 {
+            position: relative;
+            left: 100px;
+        }
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 40px;
+    }
+    &__text {
+        margin-top: 40px;
+        font-weight: 400;
+        font-size: 30px;
+        width: 542px;
+    }
+}
+
+.subs {
+    background: rgba($color: #B9F73E, $alpha: 0.6);
+    height: 810px;
+    font-family: "PT Sans Narrow";
+    color: #2A0A53;
+    &__container {
+        width: 832px;
+        margin: 0 auto;
+    }
+    &__wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 100px;
+        padding-top: 108px;
+        margin-bottom: 152px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__input {
+        width: 705px;
+        height: 136px;
+        border-radius: 100px;
+        margin-bottom: 104px;
+    }
+    &__input::placeholder {
+        font-family: 'PT Sans Narrow';
+        color: #D9D9D9;
+        font-size: 40px;
+        font-weight: 400;
+        position: relative;
+        top: 10px;
+        padding-left: 52px;
+    }
+    &__btn {
+        font-family: "PT Sans Narrow";
+        color: #2A0A53;
+        font-weight: 400;
+        font-size: 40px;
+        width: 400px;
+        height: 112px;
+        border-radius: 60px;
+        background-color: #9FEE00;
+        margin-left: 150px;
+    }
+}
+
+.footer {
+    background: rgba($color: #B9F73E, $alpha: 0.35);
+    height: 340px;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        margin-top: 43px;
+        font-family: "Inter";
+        color: #2A0A53;
+        font-weight: 400;
+        padding-left: 81px;
+    }
+    &__subtitle {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    &__num {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    &__e-mail {
+        font-size: 30px;
+    }
+    &__links {
+        font-family: "Inter";
+        color: #2A0A53;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        gap: 27.5px;
+        margin-right: 268px;
+        margin-top: 53px;
+    }
+}

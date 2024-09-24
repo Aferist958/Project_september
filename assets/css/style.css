@@ -1,0 +1,551 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter_18pt-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter_18pt-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter_28pt-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter_28pt-BoldItalic.ttf);
+  font-style: italic;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url(../fonts/PTSansNarrow-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url(../fonts/PTSansNarrow-Regular.ttf);
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background: #B9F73E;
+  height: 98px;
+  padding-top: 29px;
+}
+@media (max-width: 361px) {
+  .header {
+    padding-top: 45px;
+  }
+}
+.header__container {
+  width: 1793px;
+  margin: 0 auto;
+}
+@media (max-width: 361px) {
+  .header__container {
+    width: 340px;
+  }
+}
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 361px) {
+  .header__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: none;
+  }
+}
+@media (max-width: 361px) {
+  .header__logo {
+    width: 120px;
+    height: 20px;
+  }
+}
+.header__search {
+  width: 700px;
+  height: 38px;
+  border-radius: 100px;
+}
+@media (max-width: 361px) {
+  .header__search {
+    width: 40px;
+    height: 18px;
+  }
+}
+.header__search_btn {
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  border-radius: 10px;
+}
+@media (max-width: 361px) {
+  .header__search_btn {
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+  }
+}
+@media (max-width: 361px) {
+  .header__search_icon {
+    width: 7px;
+    height: 7px;
+  }
+}
+.header__search::-moz-placeholder {
+  color: #CACACA;
+  padding-left: 15px;
+  font-size: 20px;
+  font-family: "Inter";
+  font-weight: 400;
+}
+.header__search::placeholder {
+  color: #CACACA;
+  padding-left: 15px;
+  font-size: 20px;
+  font-family: "Inter";
+  font-weight: 400;
+}
+@media (max-width: 361px) {
+  .header__search::-moz-placeholder {
+    padding-left: 0;
+    font-size: 3px;
+  }
+  .header__search::placeholder {
+    padding-left: 0;
+    font-size: 3px;
+  }
+}
+.header__btn_0 {
+  padding: 10px 30px;
+  background-color: #ADEC5A;
+  border-radius: 20px;
+  font-family: "Inter";
+  font-weight: 600;
+  color: #2A0A53;
+  margin-right: 22px;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 361px) {
+  .header__btn_0 {
+    padding: 8px 22px;
+    font-size: 3px;
+    margin-right: 8px;
+  }
+}
+.header__btn_1 {
+  padding: 9px 7px;
+  background-color: #ADEC5A;
+  border-radius: 20px;
+  font-family: "Inter";
+  font-weight: 600;
+  color: #2A0A53;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 361px) {
+  .header__btn_1 {
+    padding: 7px 11px;
+    font-size: 3px;
+  }
+}
+@media (max-width: 361px) {
+  .header__icons {
+    width: 9px;
+    height: 10px;
+  }
+}
+.header__cart {
+  margin-right: 27px;
+}
+@media (max-width: 361px) {
+  .header__cart {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+.main {
+  padding-top: 325px;
+  background: url(../img/Group\ 37.png) no-repeat center center/cover;
+  height: 982px;
+}
+.main__container {
+  width: 574px;
+  margin: 0 auto;
+}
+.main__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__btn {
+  margin-top: 75px;
+  padding: 9px 49px;
+  background-color: #9FEE00;
+  border-radius: 25px;
+  font-family: "Inter";
+  font-weight: 600;
+  color: #2A0A53;
+  font-size: 20px;
+}
+
+.advantages {
+  background: rgba(185, 247, 62, 0.6) no-repeat center center/cover;
+  height: 800px;
+  padding-top: 84px;
+}
+.advantages__container {
+  width: 1304px;
+  margin: 0 auto;
+}
+.advantages__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages__title {
+  font-size: 100px;
+  font-family: "PT Sans Narrow";
+  font-weight: 400;
+  color: #2A0A53;
+  padding-bottom: 66px;
+}
+.advantages__info {
+  background: url(../img/Group\ 39.png) no-repeat center center/cover;
+  width: 1304px;
+  height: 466px;
+}
+.advantages__info_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages__info_subtitle {
+  font-size: 50px;
+  font-family: "PT Sans Narrow";
+  font-weight: 400;
+  color: #2A0A53;
+  max-width: 450px;
+  padding-bottom: 39px;
+}
+.advantages__info_subtitle_2 {
+  padding-right: 50px;
+}
+.advantages__info_text_0 {
+  font-size: 30px;
+  font-family: "PT Sans Narrow";
+  font-weight: 400;
+  color: #2A0A53;
+  width: 253px;
+  height: 156px;
+  margin-left: 40px;
+}
+.advantages__info_text_1 {
+  font-size: 30px;
+  font-family: "PT Sans Narrow";
+  font-weight: 400;
+  color: #2A0A53;
+  width: 305px;
+  height: 148px;
+  padding-left: 27px;
+}
+.advantages__info_text_2 {
+  font-size: 30px;
+  font-family: "PT Sans Narrow";
+  font-weight: 400;
+  color: #2A0A53;
+  width: 370px;
+  height: 117px;
+  margin-left: 50px;
+}
+.advantages__info_advant_0 {
+  margin-left: 43px;
+  margin-top: 147px;
+}
+.advantages__info_advant_1 {
+  margin-top: 188px;
+  margin-left: 163px;
+}
+
+.catalog {
+  background-color: rgba(173, 236, 90, 0.6);
+}
+.catalog__container {
+  width: 1631px;
+  margin: 0 auto;
+}
+.catalog__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.catalog__title {
+  margin-top: 120px;
+  background: url(../img/Vector\ 3.png) no-repeat;
+  padding: 77px 120px 105px 76px;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 60px;
+  color: #2A0A53;
+  margin-bottom: 76px;
+}
+.catalog__card {
+  align-items: center;
+  display: flex;
+  margin-bottom: 164px;
+  width: 1631px;
+  height: 633px;
+  background-color: #B9F73E;
+  border-radius: 50px;
+}
+.catalog__card_img {
+  padding-left: 55px;
+}
+.catalog__card_info {
+  padding-left: 110px;
+  font-family: "Inter";
+  color: #2A0A53;
+  font-weight: 700;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.catalog__card_info_subtitle {
+  font-size: 40px;
+  margin-bottom: 44px;
+}
+.catalog__card_info_text {
+  font-size: 20px;
+  width: 510px;
+  height: 239px;
+  margin-bottom: 42px;
+}
+.catalog__card_info_price {
+  font-size: 25px;
+  margin-bottom: 42px;
+}
+.catalog__card_info_buy {
+  padding: 20px 100px;
+  background: #9FEE00;
+  border-radius: 50px;
+}
+.catalog__card:last-child {
+  margin-bottom: 51px;
+}
+.catalog__link {
+  margin-left: 1508px;
+  color: #2A0A53;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 56px;
+}
+
+.about {
+  background-color: rgba(185, 247, 62, 0.35);
+  height: 810px;
+  color: #2A0A53;
+  font-family: "PT Sans Narrow";
+}
+.about__container {
+  width: 1694px;
+  margin: 0 auto;
+}
+.about__wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about__title {
+  padding-top: 54px;
+  padding-bottom: 114px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 100px;
+}
+.about__informations {
+  display: flex;
+}
+.about__info_0 {
+  padding: 44px 59px;
+  font-weight: 700;
+  font-size: 40px;
+  width: 493px;
+  height: 312px;
+  background-color: #9FEE00;
+  border-radius: 70px;
+}
+.about__info_1 {
+  padding: 52px;
+  font-weight: 700;
+  font-size: 40px;
+  width: 438px;
+  height: 311px;
+  background-color: #9FEE00;
+  border-radius: 70px;
+  margin-left: 134px;
+  margin-right: 134px;
+}
+.about__info_2 {
+  padding: 44px 76px;
+  font-weight: 700;
+  font-size: 40px;
+  width: 492px;
+  height: 312px;
+  background-color: #9FEE00;
+  border-radius: 70px;
+}
+
+.reviems {
+  background: url(../img/Group\ 40.png);
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter";
+  color: #2A0A53;
+}
+.reviems__title {
+  font-weight: 700;
+  font-size: 80px;
+  padding-top: 59px;
+}
+.reviems__reviems {
+  display: flex;
+}
+.reviems__reviem_0 {
+  position: relative;
+  top: 650px;
+}
+.reviems__reviem_1 {
+  position: relative;
+  left: 50px;
+  top: 300px;
+}
+.reviems__reviem_2 {
+  position: relative;
+  left: 100px;
+}
+.reviems__subtitle {
+  font-weight: 700;
+  font-size: 40px;
+}
+.reviems__text {
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 30px;
+  width: 542px;
+}
+
+.subs {
+  background: rgba(185, 247, 62, 0.6);
+  height: 810px;
+  font-family: "PT Sans Narrow";
+  color: #2A0A53;
+}
+.subs__container {
+  width: 832px;
+  margin: 0 auto;
+}
+.subs__wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.subs__title {
+  font-weight: 700;
+  font-size: 100px;
+  padding-top: 108px;
+  margin-bottom: 152px;
+}
+.subs__form {
+  display: flex;
+  flex-direction: column;
+}
+.subs__input {
+  width: 705px;
+  height: 136px;
+  border-radius: 100px;
+  margin-bottom: 104px;
+}
+.subs__input::-moz-placeholder {
+  font-family: "PT Sans Narrow";
+  color: #D9D9D9;
+  font-size: 40px;
+  font-weight: 400;
+  position: relative;
+  top: 10px;
+  padding-left: 52px;
+}
+.subs__input::placeholder {
+  font-family: "PT Sans Narrow";
+  color: #D9D9D9;
+  font-size: 40px;
+  font-weight: 400;
+  position: relative;
+  top: 10px;
+  padding-left: 52px;
+}
+.subs__btn {
+  font-family: "PT Sans Narrow";
+  color: #2A0A53;
+  font-weight: 400;
+  font-size: 40px;
+  width: 400px;
+  height: 112px;
+  border-radius: 60px;
+  background-color: #9FEE00;
+  margin-left: 150px;
+}
+
+.footer {
+  background: rgba(185, 247, 62, 0.35);
+  height: 340px;
+}
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__info {
+  margin-top: 43px;
+  font-family: "Inter";
+  color: #2A0A53;
+  font-weight: 400;
+  padding-left: 81px;
+}
+.footer__subtitle {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.footer__num {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.footer__e-mail {
+  font-size: 30px;
+}
+.footer__links {
+  font-family: "Inter";
+  color: #2A0A53;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  gap: 27.5px;
+  margin-right: 268px;
+  margin-top: 53px;
+}
